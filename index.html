@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Theater Trier</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-1og-01-01">
+        <li class="text">1OG-01-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-1og-02-01">
+        <li class="text">1OG-02-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-1og-03-01">
+        <li class="text">1OG-03-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-1og-04-01">
+        <li class="text">1OG-04-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-1og-05-01">
+        <li class="text">1OG-05-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-1og-06-01">
+        <li class="text">1OG-06-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-1og-f-01">
+        <li class="text">1OG-F-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-1og-f-02">
+        <li class="text">1OG-F-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-1og-f-03">
+        <li class="text">1OG-F-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-1og-f-04">
+        <li class="text">1OG-F-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-1og-f-05">
+        <li class="text">1OG-F-05</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-2og-01-01">
+        <li class="text">2OG-01-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-2og-01-02">
+        <li class="text">2OG-01-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-2og-01-03">
+        <li class="text">2OG-01-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-2og-02-01">
+        <li class="text">2OG-02-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-2og-03-01">
+        <li class="text">2OG-03-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-2og-04-01">
+        <li class="text">2OG-04-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-2og-05-01">
+        <li class="text">2OG-05-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-2og-06-01">
+        <li class="text">2OG-06-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-2og-07-01">
+        <li class="text">2OG-07-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-2og-07-02">
+        <li class="text">2OG-07-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-2og-f-01">
+        <li class="text">2OG-F-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-2og-f-02">
+        <li class="text">2OG-F-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-2og-f-03">
+        <li class="text">2OG-F-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-2og-f-04">
+        <li class="text">2OG-F-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-aufzug-01">
+        <li class="text">Aufzug-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-bg-01-01">
+        <li class="text">BG-01-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-bg-02-01">
+        <li class="text">BG-02-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-bg-03-01">
+        <li class="text">BG-03-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-bg-05-01">
+        <li class="text">BG-05-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-bg-06-01">
+        <li class="text">BG-06-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-bg-07-01">
+        <li class="text">BG-07-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-bg-07-02">
+        <li class="text">BG-07-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-bg-07-03">
+        <li class="text">BG-07-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-bg-07-04">
+        <li class="text">BG-07-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-bg-08-01">
+        <li class="text">BG-08-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-bg-08-02">
+        <li class="text">BG-08-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-bg-08-03">
+        <li class="text">BG-08-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-bg-08-04">
+        <li class="text">BG-08-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-bg-09-01">
+        <li class="text">BG-09-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-bg-10-01">
+        <li class="text">BG-10-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-bg-11-01">
+        <li class="text">BG-11-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-bg-11-02">
+        <li class="text">BG-11-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-bg-12-01">
+        <li class="text">BG-12-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-bg-13-01">
+        <li class="text">BG-13-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-bg-13-02">
+        <li class="text">BG-13-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-bg-14-01">
+        <li class="text">BG-14-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-bg-15-01">
+        <li class="text">BG-15-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-bg-16-01">
+        <li class="text">BG-16-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-bg-f-01">
+        <li class="text">BG-F-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-bg-f-02">
+        <li class="text">BG-F-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-bg-f-03">
+        <li class="text">BG-F-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-bg-f-04">
+        <li class="text">BG-F-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-bg-f-05_5">
+        <li class="text">BG-F-05_5</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="54-bg-f-05">
+        <li class="text">BG-F-05</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-bg-f-06">
+        <li class="text">BG-F-06</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-bg-f-07">
+        <li class="text">BG-F-07</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-bg-f-08">
+        <li class="text">BG-F-08</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-bg-f-09">
+        <li class="text">BG-F-09</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-bg-f-10">
+        <li class="text">BG-F-10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-bg-f-11">
+        <li class="text">BG-F-11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-bg-f-12">
+        <li class="text">BG-F-12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-dg-01-01">
+        <li class="text">DG-01-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-dg-02-01">
+        <li class="text">DG-02-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-dg-04-01">
+        <li class="text">DG-04-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-dg-05-01">
+        <li class="text">DG-05-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-dg-06-01">
+        <li class="text">DG-06-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-dg-07-01">
+        <li class="text">DG-07-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-dg-07-03">
+        <li class="text">DG-07-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-dg-07-05">
+        <li class="text">DG-07-05</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-dg-07-07">
+        <li class="text">DG-07-07</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-dg-08-01">
+        <li class="text">DG-08-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-dg-09-01">
+        <li class="text">DG-09-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-dg-10-01">
+        <li class="text">DG-10-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="74-dg-12-01">
+        <li class="text">DG-12-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-dg-13-01">
+        <li class="text">DG-13-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-dg-14-01">
+        <li class="text">DG-14-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-dg-15-02">
+        <li class="text">DG-15-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-dg-15-04">
+        <li class="text">DG-15-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-dg-15-05">
+        <li class="text">DG-15-05</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-dg-15-06">
+        <li class="text">DG-15-06</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-dg-16-01">
+        <li class="text">DG-16-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-dg-17-01">
+        <li class="text">DG-17-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-dg-17-02">
+        <li class="text">DG-17-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84-dg-f-01">
+        <li class="text">DG-F-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85-dg-f-02">
+        <li class="text">DG-F-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-dg-f-03">
+        <li class="text">DG-F-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-dg-f-04">
+        <li class="text">DG-F-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88-dg-f-05">
+        <li class="text">DG-F-05</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-dg-f-06">
+        <li class="text">DG-F-06</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90-dg-f-07">
+        <li class="text">DG-F-07</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91-dg-f-08">
+        <li class="text">DG-F-08</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92-dg-f-09">
+        <li class="text">DG-F-09</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93-eg-01-01">
+        <li class="text">EG-01-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94-eg-01-02">
+        <li class="text">EG-01-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95-eg-02-01">
+        <li class="text">EG-02-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96-eg-02-02">
+        <li class="text">EG-02-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97-eg-03-01">
+        <li class="text">EG-03-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98-eg-03-02">
+        <li class="text">EG-03-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99-eg-04-01">
+        <li class="text">EG-04-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100-eg-05-01">
+        <li class="text">EG-05-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="101-eg-06-01">
+        <li class="text">EG-06-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="102-eg-06-02">
+        <li class="text">EG-06-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="103-eg-10-01">
+        <li class="text">EG-10-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="104-eg-10-03">
+        <li class="text">EG-10-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="105-eg-11-01">
+        <li class="text">EG-11-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="106-eg-11-02">
+        <li class="text">EG-11-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="107-eg-11-03">
+        <li class="text">EG-11-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="108-eg-12-01">
+        <li class="text">EG-12-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="109-eg-12-02">
+        <li class="text">EG-12-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="110-eg-15-01">
+        <li class="text">EG-15-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="111-eg-15-02">
+        <li class="text">EG-15-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="112-eg-17-01">
+        <li class="text">EG-17-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="113-eg-18-01">
+        <li class="text">EG-18-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="114-eg-19-01">
+        <li class="text">EG-19-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="115-eg-20-01">
+        <li class="text">EG-20-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="116-eg-a-01">
+        <li class="text">EG-A-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="117-eg-a-02">
+        <li class="text">EG-A-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="118-eg-a-03">
+        <li class="text">EG-A-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="119-eg-a-04">
+        <li class="text">EG-A-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="120-eg-a-05">
+        <li class="text">EG-A-05</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="121-eg-f-01">
+        <li class="text">EG-F-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="122-eg-f-02">
+        <li class="text">EG-F-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="123-eg-f-03">
+        <li class="text">EG-F-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="124-eg-f-04">
+        <li class="text">EG-F-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="125-eg-f-05">
+        <li class="text">EG-F-05</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="126-eg-f-06">
+        <li class="text">EG-F-06</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="127-eg-f-07">
+        <li class="text">EG-F-07</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="128-eg-f-08">
+        <li class="text">EG-F-08</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="129-eg-f-09">
+        <li class="text">EG-F-09</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="130-eg-f-10">
+        <li class="text">EG-F-10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="131-eg-f-11">
+        <li class="text">EG-F-11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="132-eg-f-12">
+        <li class="text">EG-F-12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="133-eg-f-13">
+        <li class="text">EG-F-13</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="134-eg-f-14">
+        <li class="text">EG-F-14</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="135-eg-f-15">
+        <li class="text">EG-F-15</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="136-eg-f-16">
+        <li class="text">EG-F-16</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="137-kg-01-01">
+        <li class="text">KG-01-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="138-kg-02-01">
+        <li class="text">KG-02-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="139-kg-03-01">
+        <li class="text">KG-03-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="140-kg-03-02">
+        <li class="text">KG-03-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="141-kg-04-01">
+        <li class="text">KG-04-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="142-kg-04-02">
+        <li class="text">KG-04-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="143-kg-04-03">
+        <li class="text">KG-04-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="144-kg-04-04">
+        <li class="text">KG-04-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="145-kg-05-01">
+        <li class="text">KG-05-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="146-kg-05-02">
+        <li class="text">KG-05-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="147-kg-05-03">
+        <li class="text">KG-05-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="148-kg-06-01">
+        <li class="text">KG-06-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="149-kg-09-01">
+        <li class="text">KG-09-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="150-kg-10-01">
+        <li class="text">KG-10-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="151-kg-12-01">
+        <li class="text">KG-12-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="152-kg-13-01">
+        <li class="text">KG-13-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="153-kg-13-02">
+        <li class="text">KG-13-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="154-kg-13-03">
+        <li class="text">KG-13-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="155-kg-15-01">
+        <li class="text">KG-15-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="156-kg-16-01">
+        <li class="text">KG-16-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="157-kg-19-01">
+        <li class="text">KG-19-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="158-kg-20-01">
+        <li class="text">KG-20-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="159-kg-20-02">
+        <li class="text">KG-20-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="160-kg-21-01">
+        <li class="text">KG-21-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="161-kg-22-01">
+        <li class="text">KG-22-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="162-kg-25_5-01">
+        <li class="text">KG-25_5-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="163-kg-25-01">
+        <li class="text">KG-25-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="164-kg-26-01">
+        <li class="text">KG-26-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="165-kg-f-01">
+        <li class="text">KG-F-01</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="166-kg-f-02">
+        <li class="text">KG-F-02</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="167-kg-f-03">
+        <li class="text">KG-F-03</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="168-kg-f-04">
+        <li class="text">KG-F-04</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="169-kg-f-05">
+        <li class="text">KG-F-05</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="170-kg-f-06">
+        <li class="text">KG-F-06</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="171-kg-f-07">
+        <li class="text">KG-F-07</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="172-kg-f-08">
+        <li class="text">KG-F-08</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="173-kg-f-09">
+        <li class="text">KG-F-09</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="174-kg-f-10">
+        <li class="text">KG-F-10</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="175-kg-f-11">
+        <li class="text">KG-F-11</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="176-kg-f-12">
+        <li class="text">KG-F-12</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="177-kg-f-13">
+        <li class="text">KG-F-13</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
